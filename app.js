@@ -5,12 +5,12 @@ function redirectToNewDomain(url) {
         const newUrl = newBase + parsedUrl.pathname + parsedUrl.search + parsedUrl.hash;
         console.log(newUrl);
         
-        window.location.href = newUrl; // Redirect to the new URL
+        //window.location.href = newUrl; // Redirect to the new URL
     } catch (error) {
         console.error("Invalid URL", error);
     }
 }
 
-let outputUrl = "https://www.spohady.com";
+let inputUrl = "https://www.spohady.com";
 
-redirectToNewDomain(outputUrl);
+redirectToNewDomain(inputUrl);
