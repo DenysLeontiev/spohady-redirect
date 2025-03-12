@@ -6,4 +6,5 @@ const updatedUrl = replaceBeforeThirdSlash("https://www.spohady.com/", "https://
 
 console.log(updatedUrl);
 
-window.location.href = updatedUrl;
+// window.location.href = updatedUrl;
+window.location.replace(updatedUrl);
