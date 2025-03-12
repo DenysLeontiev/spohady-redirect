@@ -8,4 +8,6 @@ function replaceBeforeThirdSlash(url, newDomain) {
 
 const updatedUrl = replaceBeforeThirdSlash("https://www.spohady.com/", "https://spohady.azurewebsites.net");
 
-window.href = updatedUrl;
+console.log(updatedUrl);
+
+window.location.href = updatedUrl;
