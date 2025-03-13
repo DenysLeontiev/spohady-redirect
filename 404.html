@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        (function() {
+            const newBaseUrl = "https://spohady.azurewebsites.net";
+            const currentPath = window.location.pathname + window.location.search + window.location.hash;
+            window.location.replace(newBaseUrl + currentPath);
+        })();
+    </script>
+</head>
+<body>
+    <p>Redirecting... If you are not redirected, <a id="redirect-link" href="#">click here</a>.</p>
+    <script>
+        document.getElementById('redirect-link').href = "https://spohady.azurewebsites.net" + window.location.pathname + window.location.search + window.location.hash;
+    </script>
+</body>
+</html>
